@@ -1,0 +1,34 @@
+LeNet Architechture not pretrained:
+25 epochs
+batch size: 64
+learning rate 0.01
+
+Model Summary: 
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1          [-1, 6, 124, 124]             456
+       BatchNorm2d-2          [-1, 6, 124, 124]              12
+              ReLU-3          [-1, 6, 124, 124]               0
+         MaxPool2d-4            [-1, 6, 62, 62]               0
+            Conv2d-5           [-1, 16, 58, 58]           2,416
+       BatchNorm2d-6           [-1, 16, 58, 58]              32
+              ReLU-7           [-1, 16, 58, 58]               0
+         MaxPool2d-8           [-1, 16, 29, 29]               0
+            Linear-9                 [-1, 1000]      13,457,000
+             ReLU-10                 [-1, 1000]               0
+           Linear-11                  [-1, 500]         500,500
+             ReLU-12                  [-1, 500]               0
+           Linear-13                  [-1, 100]          50,100
+             ReLU-14                  [-1, 100]               0
+           Linear-15                    [-1, 2]             202
+================================================================
+Total params: 14,010,718
+Trainable params: 14,010,718
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 3.65
+Params size (MB): 53.45
+Estimated Total Size (MB): 57.28
+----------------------------------------------------------------
