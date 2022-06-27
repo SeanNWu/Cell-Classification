@@ -1,0 +1,142 @@
+learning_rate = 0.1
+num_epochs = 12
+batch_size = 64
+
+Checking accuracy on Training Set
+Got 11318 / 11508 with accuracy 98.35
+Checking accuracy on Test Set
+Got 207 / 213 with accuracy 97.18
+
+Epoch 0/11
+----------
+train Loss: 0.8570 Acc: 0.9491
+val Loss: 0.1683 Acc: 0.9382
+Epoch 1/11
+----------
+train Loss: 0.3376 Acc: 0.9734
+val Loss: 0.0378 Acc: 0.9453
+Epoch 2/11
+----------
+train Loss: 0.5008 Acc: 0.9706
+val Loss: 0.0984 Acc: 0.9461
+Epoch 3/11
+----------
+train Loss: 0.3616 Acc: 0.9773
+val Loss: 0.0529 Acc: 0.9453
+Epoch 4/11
+----------
+train Loss: 0.3784 Acc: 0.9782
+val Loss: 0.0536 Acc: 0.9468
+Epoch 5/11
+----------
+train Loss: 0.3739 Acc: 0.9798
+val Loss: 1.5109 Acc: 0.8960
+Epoch 6/11
+----------
+train Loss: 0.2546 Acc: 0.9841
+val Loss: 0.0616 Acc: 0.9476
+Epoch 7/11
+----------
+train Loss: 0.3247 Acc: 0.9826
+val Loss: 0.0502 Acc: 0.9484
+Epoch 8/11
+----------
+train Loss: 0.5665 Acc: 0.9771
+val Loss: 0.1478 Acc: 0.9406
+Epoch 9/11
+----------
+train Loss: 0.4294 Acc: 0.9819
+val Loss: 0.2875 Acc: 0.9335
+Epoch 10/11
+----------
+train Loss: 0.3207 Acc: 0.9843
+val Loss: 0.0354 Acc: 0.9468
+Epoch 11/11
+----------
+train Loss: 0.3044 Acc: 0.9849
+val Loss: 0.4550 Acc: 0.9328
+
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 64, 64]           9,408
+       BatchNorm2d-2           [-1, 64, 64, 64]             128
+              ReLU-3           [-1, 64, 64, 64]               0
+         MaxPool2d-4           [-1, 64, 32, 32]               0
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+              ReLU-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+             ReLU-10           [-1, 64, 32, 32]               0
+       BasicBlock-11           [-1, 64, 32, 32]               0
+           Conv2d-12           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-13           [-1, 64, 32, 32]             128
+             ReLU-14           [-1, 64, 32, 32]               0
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+             ReLU-17           [-1, 64, 32, 32]               0
+       BasicBlock-18           [-1, 64, 32, 32]               0
+           Conv2d-19          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-20          [-1, 128, 16, 16]             256
+             ReLU-21          [-1, 128, 16, 16]               0
+           Conv2d-22          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-23          [-1, 128, 16, 16]             256
+           Conv2d-24          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-25          [-1, 128, 16, 16]             256
+             ReLU-26          [-1, 128, 16, 16]               0
+       BasicBlock-27          [-1, 128, 16, 16]               0
+           Conv2d-28          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-29          [-1, 128, 16, 16]             256
+             ReLU-30          [-1, 128, 16, 16]               0
+           Conv2d-31          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-32          [-1, 128, 16, 16]             256
+             ReLU-33          [-1, 128, 16, 16]               0
+       BasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-36            [-1, 256, 8, 8]             512
+             ReLU-37            [-1, 256, 8, 8]               0
+           Conv2d-38            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-39            [-1, 256, 8, 8]             512
+           Conv2d-40            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-41            [-1, 256, 8, 8]             512
+             ReLU-42            [-1, 256, 8, 8]               0
+       BasicBlock-43            [-1, 256, 8, 8]               0
+           Conv2d-44            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-45            [-1, 256, 8, 8]             512
+             ReLU-46            [-1, 256, 8, 8]               0
+           Conv2d-47            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-48            [-1, 256, 8, 8]             512
+             ReLU-49            [-1, 256, 8, 8]               0
+       BasicBlock-50            [-1, 256, 8, 8]               0
+           Conv2d-51            [-1, 512, 4, 4]       1,179,648
+      BatchNorm2d-52            [-1, 512, 4, 4]           1,024
+             ReLU-53            [-1, 512, 4, 4]               0
+           Conv2d-54            [-1, 512, 4, 4]       2,359,296
+      BatchNorm2d-55            [-1, 512, 4, 4]           1,024
+           Conv2d-56            [-1, 512, 4, 4]         131,072
+      BatchNorm2d-57            [-1, 512, 4, 4]           1,024
+             ReLU-58            [-1, 512, 4, 4]               0
+       BasicBlock-59            [-1, 512, 4, 4]               0
+           Conv2d-60            [-1, 512, 4, 4]       2,359,296
+      BatchNorm2d-61            [-1, 512, 4, 4]           1,024
+             ReLU-62            [-1, 512, 4, 4]               0
+           Conv2d-63            [-1, 512, 4, 4]       2,359,296
+      BatchNorm2d-64            [-1, 512, 4, 4]           1,024
+             ReLU-65            [-1, 512, 4, 4]               0
+       BasicBlock-66            [-1, 512, 4, 4]               0
+AdaptiveAvgPool2d-67            [-1, 512, 1, 1]               0
+           Linear-68                    [-1, 2]           1,026
+================================================================
+Total params: 11,177,538
+Trainable params: 1,026
+Non-trainable params: 11,176,512
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 20.50
+Params size (MB): 42.64
+Estimated Total Size (MB): 63.33
+----------------------------------------------------------------
+
+
