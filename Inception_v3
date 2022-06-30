@@ -1,0 +1,35 @@
+Overtrain on first epoch
+#Hyperparameters
+learning_rate = 0.1
+num_epochs = 5
+batch_size = 64
+#model = resnet,vgg16,googlenet,inceptionv3,many more
+#image size
+
+Epoch 0/4
+----------
+train Loss: 1.6097 Acc: 0.9247
+val Loss: 0.0742 Acc: 0.9398
+Epoch 1/4
+----------
+train Loss: 0.7460 Acc: 0.9502
+val Loss: 0.7351 Acc: 0.8952
+Epoch 2/4
+----------
+train Loss: 0.9669 Acc: 0.9526
+val Loss: 0.4477 Acc: 0.9328
+Epoch 3/4
+----------
+train Loss: 0.8367 Acc: 0.9607
+val Loss: 0.2924 Acc: 0.9375
+Epoch 4/4
+----------
+train Loss: 0.7771 Acc: 0.9645
+val Loss: 0.1479 Acc: 0.9421
+
+Checking accuracy on Training Set
+Got 11385 / 11508 with accuracy 98.93
+Checking accuracy on Test Set
+Got 191 / 213 with accuracy 89.67
+
+After one epoch
